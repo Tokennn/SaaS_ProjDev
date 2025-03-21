@@ -13,14 +13,17 @@ const Navbar = () => {
       </Link>
       
       <nav className="flex items-center gap-6">
-        <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+        {/* <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
           Accueil
-        </Link>
-        <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+        </Link> */}
+        <a href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+          Accueil
+        </a>
+        <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
           À propos
         </Link>
         <Button variant="default" size="sm" className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity">
-          Commencer
+          Me
         </Button>
       </nav>
     </header>

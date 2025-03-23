@@ -4,6 +4,8 @@ import Hero from '@/components/Hero';
 import QuestionForm from '@/components/QuestionForm';
 import ResultsView from '@/components/ResultsView';
 
+
+
 const Index = () => {
   const [view, setView] = useState<'landing' | 'form' | 'results'>('landing');
   const [results, setResults] = useState<any>(null);

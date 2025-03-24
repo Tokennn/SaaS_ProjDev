@@ -4,14 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
-import LogoHeader from "@/components/LogoHeader"; 
-
+import LogoHeader from "@/components/LogoHeader"; // adapte le chemin si besoin
 
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
 
-  // Refs pour GSAP
   const cardRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const googleBtnRef = useRef<HTMLButtonElement>(null);
@@ -53,14 +51,13 @@ export default function AuthForm() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gray-100">
-      <LogoHeader />
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 px-4">
+      <LogoHeader /> {/* Logo AU-DESSUS du formulaire */}
 
-      <div className="flex justify-center items-center pt-24">
-        <Card
-          ref={cardRef}
-          className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200"
-        >
+      <Card
+        ref={cardRef}
+        className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200 mt-4"
+      >
         <CardContent className="p-0">
           <div className="flex justify-center mb-4 text-gray-700">
             <Lock size={32} />
@@ -138,7 +135,6 @@ export default function AuthForm() {
           </p>
         </CardContent>
       </Card>
-    </div>
     </div>
   );
 }

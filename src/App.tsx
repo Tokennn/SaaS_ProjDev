@@ -8,7 +8,7 @@ import NotFound from "@/pages/NotFound";
 import About from "@/pages/about";
 import AuthPage from "@/pages/auth";
 import RegisterForm from "./components/RegisterForm";
-
+import VisitCounter from "@/components/VisitCounter";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +27,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <VisitCounter />
     </TooltipProvider>
   </QueryClientProvider>
 );

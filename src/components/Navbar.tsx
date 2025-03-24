@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-4 px-6 md:px-12 flex items-center justify-between fixed top-0 z-50 bg-background/80 backdrop-blur-md">
+    <header className="w-full py-4 px-6 md:px-12 flex items-center justify-between fixed top-0 z-50  backdrop-blur-md">
       <Link to="/" className="flex items-center gap-2">
         <div className="h-8 w-8 rounded-md bg-gradient-to-r from-custom-blue to-custom-purple flex items-center justify-center text-white font-bold">
           LS

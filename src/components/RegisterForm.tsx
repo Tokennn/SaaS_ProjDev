@@ -2,14 +2,28 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar"; // adapte le chemin si nécessaire
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
+import LogoHeader from "@/components/LogoHeader";
+
+
+const RegisterPage = () => {
+  return (
+    <div>
+      <Navbar />
+      <div className="pt-20">
+        <RegisterForm />
+      </div>
+    </div>
+  );
+};
 
 export default function RegisterForm() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
 
-  // Refs pour l'animation
+  
   const cardRef = useRef<HTMLDivElement>(null);
   const inputsRef = useRef<HTMLFormElement>(null);
   const googleBtnRef = useRef<HTMLButtonElement>(null);
@@ -51,11 +65,14 @@ export default function RegisterForm() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <Card
-        ref={cardRef}
-        className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200"
-      >
+    <div className="relative min-h-screen bg-gray-100">
+      <LogoHeader />
+
+      <div className="flex justify-center items-center pt-24">
+        <Card
+          ref={cardRef}
+          className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200"
+        >
         <CardContent className="p-0">
           <div className="flex justify-center mb-4 text-gray-700">
             <Lock size={32} />
@@ -154,6 +171,7 @@ export default function RegisterForm() {
           </p>
         </CardContent>
       </Card>
+    </div>
     </div>
   );
 }

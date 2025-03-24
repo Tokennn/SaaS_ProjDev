@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
+import LogoHeader from "@/components/LogoHeader"; 
+
 
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
@@ -51,11 +53,14 @@ export default function AuthForm() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <Card
-        ref={cardRef}
-        className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200"
-      >
+    <div className="relative min-h-screen bg-gray-100">
+      <LogoHeader />
+
+      <div className="flex justify-center items-center pt-24">
+        <Card
+          ref={cardRef}
+          className="w-full max-w-md p-6 rounded-2xl shadow-md bg-white border border-gray-200"
+        >
         <CardContent className="p-0">
           <div className="flex justify-center mb-4 text-gray-700">
             <Lock size={32} />
@@ -133,6 +138,7 @@ export default function AuthForm() {
           </p>
         </CardContent>
       </Card>
+    </div>
     </div>
   );
 }

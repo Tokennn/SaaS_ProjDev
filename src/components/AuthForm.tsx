@@ -45,7 +45,9 @@ export default function AuthForm() {
       "-=0.4"
     );
 
-    return () => tl.kill();
+    return () => {
+      tl.kill();
+    };
   }, []);
 
   return (
@@ -63,7 +65,7 @@ export default function AuthForm() {
             Don&apos;t have an account?{" "}
             <button
               onClick={() => setIsLogin(false)}
-              className="text-red-500 font-medium hover:underline"
+              className="text-pink-500 font-medium hover:underline"
             >
               Sign up.
             </button>
@@ -80,7 +82,7 @@ export default function AuthForm() {
             <div>
               <label className="flex justify-between items-center text-sm font-medium text-gray-700 mb-1">
                 Password
-                <a href="#" className="text-red-500 text-xs hover:underline">
+                <a href="#" className="text-pink-500 text-xs hover:underline">
                   Forgot password?
                 </a>
               </label>
@@ -125,7 +127,7 @@ export default function AuthForm() {
 
           <p className="text-xs text-gray-500 text-center mt-4">
             By signing in, you agree to our{" "}
-            <a href="#" className="text-red-500 hover:underline">
+            <a href="#" className="text-pink-500 hover:underline">
               Terms of Service.
             </a>
           </p>

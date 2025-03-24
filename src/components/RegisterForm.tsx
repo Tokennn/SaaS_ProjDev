@@ -63,7 +63,7 @@ export default function RegisterForm() {
           <h2 className="text-2xl font-bold text-center">Create an account</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
             Already have an account?{" "}
-            <a href="/auth" className="text-red-500 font-medium hover:underline">
+            <a href="/auth" className="text-purple-500 font-medium hover:underline">
               Sign in.
             </a>
           </p>
@@ -148,7 +148,7 @@ export default function RegisterForm() {
 
           <p className="text-xs text-gray-500 text-center mt-4">
             By signing up, you agree to our{" "}
-            <a href="#" className="text-red-500 hover:underline">
+            <a href="#" className="text-purple-500 hover:underline">
               Terms of Service.
             </a>
           </p>

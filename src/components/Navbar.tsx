@@ -22,9 +22,16 @@ const Navbar = () => {
         <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
           À propos
         </Link>
-        <Button variant="default" size="sm" className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity">
+        {/* <Button variant="default" size="sm" className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity">
           Me
-        </Button>
+        </Button> */}
+        
+        <Link to="/auth" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+          Login
+        </Link>
+        <Link to="/RegisterForm" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+          Register
+        </Link>
       </nav>
     </header>
   );

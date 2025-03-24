@@ -62,14 +62,14 @@ export default function AuthForm() {
           <div className="flex justify-center mb-4 text-gray-700">
             <Lock size={32} />
           </div>
-          <h2 className="text-2xl font-bold text-center">Welcome back!</h2>
+          <h2 className="text-2xl font-bold text-center">Te revoila !</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
-            Don&apos;t have an account?{" "}
+            Pas de compte ?{" "}
             <button
               onClick={() => setIsLogin(false)}
               className="text-pink-500 font-medium hover:underline"
             >
-              Sign up.
+              S'enregistrer.
             </button>
           </p>
 
@@ -83,9 +83,9 @@ export default function AuthForm() {
 
             <div>
               <label className="flex justify-between items-center text-sm font-medium text-gray-700 mb-1">
-                Password
+                Mot de Passe
                 <a href="#" className="text-pink-500 text-xs hover:underline">
-                  Forgot password?
+                  Mot de passe oublié?
                 </a>
               </label>
               <div className="relative">
@@ -104,13 +104,13 @@ export default function AuthForm() {
             </div>
 
             <Button className="w-full bg-black text-white hover:bg-gray-900">
-              Continue
+              Continuer
             </Button>
           </form>
 
           <div className="flex items-center my-4">
             <hr className="flex-grow border-gray-300" />
-            <span className="mx-2 text-sm text-gray-500">or</span>
+            <span className="mx-2 text-sm text-gray-500">ou</span>
             <hr className="flex-grow border-gray-300" />
           </div>
 
@@ -124,11 +124,11 @@ export default function AuthForm() {
               alt="Google"
               className="w-5 h-5"
             />
-            Continue with Google
+            Continuer avec Google
           </Button>
 
           <p className="text-xs text-gray-500 text-center mt-4">
-            By signing in, you agree to our{" "}
+            En signant,vous acceptez les{" "}
             <a href="#" className="text-pink-500 hover:underline">
               Terms of Service.
             </a>

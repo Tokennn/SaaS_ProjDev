@@ -13,7 +13,7 @@ const About = () => {
         {/* <h1 className="text-3xl font-bold text-gray-800 mb-4">À Propos</h1> */}
         <p className="text-gray-600 font-bold text-black text-lg">
           Bienvenue sur notre plateforme SaaS ! Notre mission est de fournir des solutions innovantes
-          et performantes pour aider les entreprises à atteindre leurs objectifs.
+          et performantes pour aider les entreprises et les particuliers à atteindre leurs objectifs.
         </p>
         <p className="text-gray-600 font-bold text-black text-lg mt-4">
           Nous mettons un point d'honneur à allier technologie et simplicité d'utilisation afin de garantir

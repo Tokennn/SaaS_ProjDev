@@ -19,18 +19,18 @@ const Navbar = () => {
         <a href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
           Accueil
         </a>
-        <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
-          À propos
-        </Link>
         {/* <Button variant="default" size="sm" className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity">
           Me
         </Button> */}
         
         <Link to="/auth" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
-          Login
+          Connexion
         </Link>
         <Link to="/RegisterForm" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
-          Register
+          S'enregistrer
+        </Link>
+        <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden md:block">
+          À propos
         </Link>
       </nav>
     </header>

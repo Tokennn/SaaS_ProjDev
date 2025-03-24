@@ -77,11 +77,11 @@ export default function RegisterForm() {
           <div className="flex justify-center mb-4 text-gray-700">
             <Lock size={32} />
           </div>
-          <h2 className="text-2xl font-bold text-center">Create an account</h2>
+          <h2 className="text-2xl font-bold text-center">Créer un compte</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
-            Already have an account?{" "}
+            Déjà un compte ?{" "}
             <a href="/auth" className="text-purple-500 font-medium hover:underline">
-              Sign in.
+              Connexion.
             </a>
           </p>
 
@@ -89,7 +89,7 @@ export default function RegisterForm() {
           <form ref={inputsRef} className="space-y-4 mt-6">
             <div>
               <label className="text-sm font-medium text-gray-700 mb-1 block">
-                Full Name
+                Nom complet
               </label>
               <Input type="text" placeholder="Enter your full name" />
             </div>
@@ -103,7 +103,7 @@ export default function RegisterForm() {
 
             <div>
               <label className="text-sm font-medium text-gray-700 mb-1 block">
-                Password
+                Mot de Passe 
               </label>
               <div className="relative">
                 <Input
@@ -122,7 +122,7 @@ export default function RegisterForm() {
 
             <div>
               <label className="text-sm font-medium text-gray-700 mb-1 block">
-                Confirm Password
+                Comfirmer votre mot de passe 
               </label>
               <div className="relative">
                 <Input
@@ -140,13 +140,13 @@ export default function RegisterForm() {
             </div>
 
             <Button className="w-full bg-black text-white hover:bg-gray-900">
-              Continue
+              Continuer
             </Button>
           </form>
 
           <div className="flex items-center my-4">
             <hr className="flex-grow border-gray-300" />
-            <span className="mx-2 text-sm text-gray-500">or</span>
+            <span className="mx-2 text-sm text-gray-500">ou</span>
             <hr className="flex-grow border-gray-300" />
           </div>
 
@@ -160,11 +160,11 @@ export default function RegisterForm() {
               alt="Google"
               className="w-5 h-5"
             />
-            Continue with Google
+            Continuer avec Google
           </Button>
 
           <p className="text-xs text-gray-500 text-center mt-4">
-            By signing up, you agree to our{" "}
+            En signant,vous acceptez les{" "}
             <a href="#" className="text-purple-500 hover:underline">
               Terms of Service.
             </a>

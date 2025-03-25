@@ -11,8 +11,21 @@
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+<!-- 
+    <button id="darkToggle" class="p-2 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white">
+      Mode Sombre
+    </button> -->
+
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      const toggle = document.getElementById('darkToggle');
+      toggle.addEventListener('click', () => {
+        console.log("Bouton cliqué"); // <-- pour vérifier que ça clique
+
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
   </body>
 </html>

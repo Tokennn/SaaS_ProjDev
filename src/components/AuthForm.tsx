@@ -78,7 +78,7 @@ export default function AuthForm() {
               <label className="text-sm font-medium text-gray-700 mb-1 block">
                 Email
               </label>
-              <Input type="email" placeholder="Enter your email" />
+              <Input type="email" placeholder="Entrer votre email" />
             </div>
 
             <div>
@@ -91,7 +91,7 @@ export default function AuthForm() {
               <div className="relative">
                 <Input
                   type={showPassword ? "text" : "password"}
-                  placeholder="Enter your password"
+                  placeholder="Entrer votre mot de passe"
                 />
                 <button
                   type="button"

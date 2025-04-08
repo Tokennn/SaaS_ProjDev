@@ -98,7 +98,7 @@ export default function RegisterForm() {
               <label className="text-sm font-medium text-gray-700 mb-1 block">
                 Email
               </label>
-              <Input type="email" placeholder="Enter your email" />
+              <Input type="email" placeholder="Entrer votre email" />
             </div>
 
             <div>
@@ -108,7 +108,7 @@ export default function RegisterForm() {
               <div className="relative">
                 <Input
                   type={showPassword ? "text" : "password"}
-                  placeholder="Enter your password"
+                  placeholder="Entrer votre mot de passe"
                 />
                 <button
                   type="button"
@@ -127,7 +127,7 @@ export default function RegisterForm() {
               <div className="relative">
                 <Input
                   type={showConfirm ? "text" : "password"}
-                  placeholder="Re-enter your password"
+                  placeholder="Retaper votre mot de passe"
                 />
                 <button
                   type="button"

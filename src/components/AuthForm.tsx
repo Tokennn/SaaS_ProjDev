@@ -66,7 +66,7 @@ export default function AuthForm() {
           <h2 className="text-2xl font-bold text-center">Te revoila !</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
           Pas de compte ?{" "}
-          <Link to="/register" className="text-pink-500 font-medium hover:underline">
+          <Link to="/registerform" className="text-pink-500 font-medium hover:underline">
             S'enregistrer.
           </Link>
           </p>

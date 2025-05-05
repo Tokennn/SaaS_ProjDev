@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/Navbar"; // adapte le chemin si nécessaire
+import Navbar from "@/components/Navbar";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
 import LogoHeader from "@/components/LogoHeader";

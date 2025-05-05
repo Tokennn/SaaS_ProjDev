@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
-import LogoHeader from "@/components/LogoHeader"; // adapte le chemin si besoin
+import LogoHeader from "@/components/LogoHeader";
 
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
@@ -64,13 +64,10 @@ export default function AuthForm() {
           </div>
           <h2 className="text-2xl font-bold text-center">Te revoila !</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
-            Pas de compte ?{" "}
-            <button
-              onClick={() => setIsLogin(false)}
-              className="text-pink-500 font-medium hover:underline"
-            >
-              S'enregistrer.
-            </button>
+          Pas de compte ?{" "}
+          <a href="/registerform" className="text-pink-500 font-medium hover:underline">
+            S'enregistrer.
+          </a>
           </p>
 
           <form ref={formRef} className="space-y-4 mt-6">

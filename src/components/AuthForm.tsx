@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -65,9 +66,9 @@ export default function AuthForm() {
           <h2 className="text-2xl font-bold text-center">Te revoila !</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
           Pas de compte ?{" "}
-          <a href="/registerform" className="text-pink-500 font-medium hover:underline">
+          <Link to="/register" className="text-pink-500 font-medium hover:underline">
             S'enregistrer.
-          </a>
+          </Link>
           </p>
 
           <form ref={formRef} className="space-y-4 mt-6">

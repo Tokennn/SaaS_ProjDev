@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -80,9 +81,9 @@ export default function RegisterForm() {
           <h2 className="text-2xl font-bold text-center">Créer un compte</h2>
           <p className="text-center text-sm text-gray-600 mt-1">
             Déjà un compte ?{" "}
-            <a href="/auth" className="text-purple-500 font-medium hover:underline">
+            <Link to="/auth" className="text-purple-500 font-medium hover:underline">
               Connexion.
-            </a>
+            </Link>
           </p>
 
           {/* Refs pour GSAP */}

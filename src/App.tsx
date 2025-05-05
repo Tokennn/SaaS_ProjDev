@@ -9,6 +9,8 @@ import About from "@/pages/about";
 import AuthPage from "@/pages/auth";
 import RegisterForm from "./components/RegisterForm";
 import VisitCounter from "@/components/VisitCounter";
+import AuthForm from "./components/AuthForm";
+import UserProfile from "./components/UserProfile";
 
 const queryClient = new QueryClient();
 
@@ -21,8 +23,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/auth" element={<AuthPage />} />
-          <Route path="/RegisterForm" element={<RegisterForm />} />
+          <Route path="/auth" element={<AuthForm />} />
+          <Route path="/registerform" element={<RegisterForm />} />
+          <Route path="/profile" element={<UserProfile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

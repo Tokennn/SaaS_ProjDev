@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,9 @@ import Navbar from "@/components/Navbar";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import gsap from "gsap";
 import LogoHeader from "@/components/LogoHeader";
-
+import { signInWithPopup } from "firebase/auth";
+import { auth, googleProvider } from "@/lib/firebase";
+import { toast } from "sonner";
 
 const RegisterPage = () => {
   return (
@@ -23,11 +25,23 @@ const RegisterPage = () => {
 export default function RegisterForm() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const navigate = useNavigate();
 
-  
   const cardRef = useRef<HTMLDivElement>(null);
   const inputsRef = useRef<HTMLFormElement>(null);
   const googleBtnRef = useRef<HTMLButtonElement>(null);
+
+  const handleGoogleSignIn = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const user = result.user;
+      toast.success("Inscription réussie avec Google !");
+      navigate("/");
+    } catch (error) {
+      console.error("Erreur lors de l'inscription avec Google:", error);
+      toast.error("Erreur lors de l'inscription avec Google");
+    }
+  };
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -155,6 +169,7 @@ export default function RegisterForm() {
             ref={googleBtnRef}
             variant="outline"
             className="w-full flex items-center justify-center gap-2 border-gray-300"
+            onClick={handleGoogleSignIn}
           >
             <img
               src="https://www.svgrepo.com/show/475656/google-color.svg"

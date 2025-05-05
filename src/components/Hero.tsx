@@ -110,7 +110,7 @@ const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
-  const btnAnimRef = useRef<HTMLButtonElement>(null); // Référence pour l'animation du bouton
+  const btnAnimRef = useRef<HTMLButtonElement>(null); 
 
   useEffect(() => {
     const tl = gsap.timeline();

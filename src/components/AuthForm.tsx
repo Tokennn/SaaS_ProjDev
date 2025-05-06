@@ -11,7 +11,6 @@ import { auth, googleProvider } from "@/lib/firebase";
 import { toast } from "sonner";
 
 export default function AuthForm() {
-  const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 

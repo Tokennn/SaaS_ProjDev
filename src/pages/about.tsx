@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 25 }} // Départ en bas avec opacité 0
-      animate={{ opacity: 1, y: 0 }} // Arrive en fondu avec montée
-      transition={{ duration: 0.6, ease: "easeOut" }} // Durée et fluidité
+      initial={{ opacity: 0, y: 25 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className="min-h-screen flex items-center justify-center bg-gray-100 p-8"
     >
       <div className="max-w-3xl bg-white shadow-lg rounded-2xl p-6">

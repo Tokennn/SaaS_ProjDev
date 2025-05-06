@@ -41,14 +41,12 @@ const Navbar = () => {
 
   return (
     <header className="w-full py-4 px-6 md:px-12 flex items-center justify-between fixed top-0 z-50 backdrop-blur-md">
-      <div className="flex items-center gap-2">
-      <div className="h-8 w-8 rounded-md bg-gradient-to-r from-custom-blue to-custom-purple flex items-center justify-center text-white font-bold">
-        LS
-      </div>
-      <Link to="/">
+      <Link to="/" className="flex items-center gap-2">
+        <div className="h-8 w-8 rounded-md bg-gradient-to-r from-custom-blue to-custom-purple flex items-center justify-center text-white font-bold">
+          LS
+        </div>
         <span className="text-xl font-bold hidden sm:block">LangSensei</span>
       </Link>
-      </div>
       
       {/* Bouton du menu hamburger pour mobile */}
       <button 
@@ -70,9 +68,9 @@ const Navbar = () => {
         <Link to="/RegisterForm" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors w-full md:w-auto text-center">
           S'enregistrer
         </Link> */}
-        <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors w-full md:w-auto text-center">
+        {/* <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors w-full md:w-auto text-center">
           À propos
-        </Link>
+        </Link> */}
       </nav>
 
       <div className="flex items-center">
@@ -94,12 +92,20 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         ) : (
-          <Link
-            to="/auth"
-            className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-          >
-            Se connecter
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              to="/about"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              À propos
+            </Link>
+            <Link
+              to="/auth"
+              className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Se connecter
+            </Link>
+          </div>
         )}
       </div>
     </header>

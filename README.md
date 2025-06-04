@@ -1,21 +1,20 @@
 # 🚀 SaaS ProjDev - Plateforme de Développement SaaS
 
 ## 📝 Description
-SaaS ProjDev est une application web moderne et robuste construite avec React, TypeScript et NestJS. Cette plateforme offre une solution complète pour la gestion de projets de développement SaaS, intégrant des fonctionnalités avancées d'authentification, de gestion de données en temps réel et d'interface utilisateur moderne.
+SaaS ProjDev est une application web moderne et robuste construite avec React, TypeScript et NestJS. Cette plateforme offre une solution complète pour la gestion de projets de développement mini-SaaS, intégrant des fonctionnalités avancées d'authentification, de gestion de données en temps réel et d'interface utilisateur moderne.
 
 ## ✨ Fonctionnalités Principales
-- 🔐 Authentification sécurisée avec Firebase et JWT
+- 🔐 Authentification sécurisée
 - 📊 Interface utilisateur moderne avec Shadcn/UI
 - 🔄 Communication en temps réel avec Socket.IO
 - 📱 Design responsive avec Tailwind CSS
-- 📈 Visualisation de données avec Recharts
-- 🎨 Thème personnalisable (clair/sombre)
-- 🔍 Validation des formulaires avec Zod
+- 📈 Visualisation de données 
+- 🔍 Validation des formulaires
 - 📦 Gestion d'état avec React Query
 
 ## 🛠️ Technologies Utilisées
 - **Frontend:**
-  - React 18
+  - React 
   - TypeScript
   - Vite
   - Tailwind CSS
@@ -27,19 +26,13 @@ SaaS ProjDev est une application web moderne et robuste construite avec React, T
 - **Backend:**
   - NestJS
   - Express
-  - Prisma
   - Socket.IO
-  - Firebase Admin
-
-- **Base de données:**
-  - Prisma ORM
-  - PostgreSQL (via Prisma)
 
 ## 🚀 Installation
 
 1. **Cloner le repository**
    ```bash
-   git clone [URL_DU_REPO]
+   git clone [https://github.com/Tokennn/SaaS_ProjDev.git]
    cd SaaS_ProjDev
    ```
 
@@ -63,6 +56,10 @@ SaaS ProjDev est une application web moderne et robuste construite avec React, T
 5. **Lancer l'application en mode développement**
    ```bash
    npm run dev
+   ```
+
+    ```bash
+   node src/server.js
    ```
 
 ## 📦 Scripts Disponibles

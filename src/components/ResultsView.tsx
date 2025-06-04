@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Download } from 'lucide-react';
+import { ArrowLeft, Download, Code } from 'lucide-react';
 import gsap from 'gsap';
+import ProjectGenerator from './ProjectGenerator';
 
 interface ResultsViewProps {
   results: {
@@ -20,6 +21,7 @@ const ResultsView: React.FC<ResultsViewProps> = ({ results, onBack, onReset }) =
   const containerRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+  const [showGenerator, setShowGenerator] = useState(false);
   
   useEffect(() => {
     const tl = gsap.timeline();
@@ -76,6 +78,10 @@ ${results.explanations.map(exp => `- ${exp.language}: ${exp.reason}`).join('\n')
     URL.revokeObjectURL(url);
   };
 
+  if (showGenerator) {
+    return <ProjectGenerator technologies={results.languages} onBack={() => setShowGenerator(false)} />;
+  }
+
   return (
     <div ref={containerRef} className="min-h-screen pt-24 pb-16 px-6 md:px-12 flex flex-col items-center justify-center">
       <div className="w-full max-w-4xl mx-auto">
@@ -110,6 +116,11 @@ ${results.explanations.map(exp => `- ${exp.language}: ${exp.reason}`).join('\n')
           <Button onClick={handleExport} variant="secondary" className="flex-1">
             <Download className="mr-2 h-4 w-4" />
             Exporter les résultats
+          </Button>
+
+          <Button onClick={() => setShowGenerator(true)} className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity flex-1">
+            <Code className="mr-2 h-4 w-4" />
+            Générer le projet
           </Button>
           
           <Button onClick={onReset} className="bg-gradient-to-r from-custom-blue to-custom-purple hover:opacity-90 transition-opacity flex-1">

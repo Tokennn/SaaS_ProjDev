@@ -1,43 +1,123 @@
-# Welcome to your Lovable project
+# 🚀 SaaS ProjDev - Plateforme de Développement SaaS
 
-## Project info
+## 📝 Description
+SaaS ProjDev est une application web moderne et robuste construite avec React, TypeScript et NestJS. Cette plateforme offre une solution complète pour la gestion de projets de développement SaaS, intégrant des fonctionnalités avancées d'authentification, de gestion de données en temps réel et d'interface utilisateur moderne.
 
+## ✨ Fonctionnalités Principales
+- 🔐 Authentification sécurisée avec Firebase et JWT
+- 📊 Interface utilisateur moderne avec Shadcn/UI
+- 🔄 Communication en temps réel avec Socket.IO
+- 📱 Design responsive avec Tailwind CSS
+- 📈 Visualisation de données avec Recharts
+- 🎨 Thème personnalisable (clair/sombre)
+- 🔍 Validation des formulaires avec Zod
+- 📦 Gestion d'état avec React Query
 
+## 🛠️ Technologies Utilisées
+- **Frontend:**
+  - React 18
+  - TypeScript
+  - Vite
+  - Tailwind CSS
+  - Shadcn/UI
+  - React Router DOM
+  - React Query
+  - Socket.IO Client
 
-**Use your preferred IDE**
+- **Backend:**
+  - NestJS
+  - Express
+  - Prisma
+  - Socket.IO
+  - Firebase Admin
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Base de données:**
+  - Prisma ORM
+  - PostgreSQL (via Prisma)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Installation
 
-Follow these steps:
+1. **Cloner le repository**
+   ```bash
+   git clone [URL_DU_REPO]
+   cd SaaS_ProjDev
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Configurer les variables d'environnement**
+   ```bash
+   cp .env.example .env
+   ```
+   Remplissez les variables d'environnement nécessaires dans le fichier `.env`
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. **Initialiser la base de données**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+5. **Lancer l'application en mode développement**
+   ```bash
+   npm run dev
+   ```
+
+## 📦 Scripts Disponibles
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Compile l'application pour la production
+- `npm run build:dev` - Compile l'application en mode développement
+- `npm run lint` - Vérifie le code avec ESLint
+- `npm run preview` - Prévisualise la version de production
+- `npm run server` - Lance le serveur backend
+
+## 🏗️ Structure du Projet
+```
+src/
+├── api/          # Points d'entrée API
+├── components/   # Composants React réutilisables
+├── hooks/        # Hooks personnalisés
+├── lib/          # Utilitaires et configurations
+├── pages/        # Pages de l'application
+├── stats/        # Composants de statistiques
+└── server.js     # Configuration du serveur
 ```
 
+## 🔒 Sécurité
+- Authentification JWT
+- Validation des données avec Zod
+- Protection CSRF
+- Gestion sécurisée des sessions
+- Variables d'environnement pour les secrets
 
-## What technologies are used for this project?
+## 🎨 Interface Utilisateur
+- Design moderne et minimaliste
+- Composants accessibles (ARIA)
+- Animations fluides avec Framer Motion
+- Thème clair/sombre
+- Interface responsive
 
-This project is built with .
+## 🤝 Contribution
+Les contributions sont les bienvenues ! N'hésitez pas à :
+1. Fork le projet
+2. Créer une branche pour votre fonctionnalité
+3. Commiter vos changements
+4. Pousser vers la branche
+5. Ouvrir une Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 Licence
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
+## 👥 Auteurs
+- [Votre Nom] - Développeur Principal
 
-## I want to use a custom domain - is that possible?
+## 🙏 Remerciements
+- Shadcn/UI pour les composants
+- La communauté open source
+- Tous les contributeurs
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
+
+⭐ N'hésitez pas à donner une étoile au projet si vous l'appréciez !

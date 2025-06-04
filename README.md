@@ -38,7 +38,7 @@ SaaS ProjDev est une application web moderne et robuste construite avec React, T
 
 2. **Installer les dépendances**
    ```bash
-   npm install
+   npm install i
    ```
 
 3. **Configurer les variables d'environnement**

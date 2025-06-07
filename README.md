@@ -66,9 +66,6 @@ SaaS ProjDev est une application web moderne et robuste construite avec React, T
 - `npm run dev` - Lance le serveur de développement
 - `npm run build` - Compile l'application pour la production
 - `npm run build:dev` - Compile l'application en mode développement
-- `npm run lint` - Vérifie le code avec ESLint
-- `npm run preview` - Prévisualise la version de production
-- `npm run server` - Lance le serveur backend
 
 ## 🏗️ Structure du Projet
 ```
@@ -93,27 +90,17 @@ src/
 - Design moderne et minimaliste
 - Composants accessibles (ARIA)
 - Animations fluides avec Framer Motion
-- Thème clair/sombre
 - Interface responsive
-
-## 🤝 Contribution
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commiter vos changements
-4. Pousser vers la branche
-5. Ouvrir une Pull Request
 
 ## 📄 Licence
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Auteurs
-- [Votre Nom] - Développeur Principal
+- [Quentin.Contreau] - Développeur Principal
 
 ## 🙏 Remerciements
 - Shadcn/UI pour les composants
 - La communauté open source
-- Tous les contributeurs
 
 ---
 

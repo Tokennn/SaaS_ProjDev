@@ -103,6 +103,6 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 - La communauté open source
 
 ---
-PS : Hébergement fais sur : https://langage-sensei.netlify.app
+PS : Hébergement fais sur or en bêta pour certaines fonctionnalité : https://langage-sensei.netlify.app
 
 ⭐ N'hésitez pas à donner une étoile au projet si vous l'appréciez !
